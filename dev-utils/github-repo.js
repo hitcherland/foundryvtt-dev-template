@@ -5,9 +5,13 @@ const repo = config.githubRepo;
 const branch = config.githubBranch;
 const repository = `https://github.com/${repo}.git`;
 
-const options = {
-    branch: config.branch,
-    repo: repository,
-}
+if(repo !== undefined && branch !== undefined) {
+    const options = {
+        branch: branch,
+        repo: repository,
+    }
 
-ghpages.publish('dist', options)
+    console.warn(options);
+    
+    ghpages.publish('dist', options)
+}
