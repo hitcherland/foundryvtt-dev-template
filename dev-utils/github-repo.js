@@ -10,8 +10,6 @@ if(repo !== undefined && branch !== undefined) {
         branch: branch,
         repo: repository,
     }
-
-    console.warn(options);
     
     ghpages.publish('dist', options)
 }
