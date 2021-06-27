@@ -3,6 +3,7 @@
     "title": "A Sample Module",
     "author": "hitcherland",
     "description": "This is a sample module to show off foundryvtt-dev-template",
+    "version": "0.01",
     "minimumCoreVersion": "0.8.8",
     "esmodules": [
         "sample.js"
