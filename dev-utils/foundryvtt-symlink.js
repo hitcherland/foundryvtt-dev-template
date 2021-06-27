@@ -61,6 +61,6 @@ module.exports = class FoundryVTTSymlinkPlugin {
             } else {
                 log(`Created symbolic link from "${this.distPath}" to "${packagePath}"`)
             }
-        });
+        }.bind(this));
     }
 }

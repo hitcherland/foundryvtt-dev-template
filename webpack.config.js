@@ -23,16 +23,16 @@ function transformManifest(content) {
     manifest.minimumCoreVersion = config.minimumCoreVersion;
 
     // Optional
-    manifest.esmodules ||= [`${name}.js`];
-    manifest.compatibleCoreVersion ||= config.compatibleCoreVersion;
+    if(manifest.esmodules === undefined) manifest.esmodules = [`${name}.js`];
+    if(manifest.compatibleCoreVersion === undefined) manifest.compatibleCoreVersion = config.compatibleCoreVersion;
 
     const githubRepo = config.githubRepo;
     const githubBranch = config.githubBranch;
     if(githubRepo) {
-        manifest.url ||= `https://github.com/${githubRepo}`;
-        manifest.manifest ||= `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/${type}.json`;
-        manifest.readme ||= `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/README.md`;
-        manifest.download ||= `https://github.com/${githubRepo}/archive/refs/tags/${package.version}.zip`;
+        if(manifest.url === undefined) manifest.url = `https://github.com/${githubRepo}`;
+        if(manifest.manifest === undefined) manifest.manifest = `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/${type}.json`;
+        if(manifest.readme === undefined) manifest.readme = `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/README.md`;
+        if(manifest.download === undefined) manifest.download = `https://github.com/${githubRepo}/archive/refs/tags/${package.version}.zip`;
     }
 
     // Return as nicely parsed string
