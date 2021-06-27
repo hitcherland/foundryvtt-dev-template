@@ -1,0 +1,15 @@
+{
+    "name": "sample",
+    "title": "A Sample Module",
+    "author": "hitcherland",
+    "description": "This is a sample module to show off foundryvtt-dev-template",
+    "minimumCoreVersion": "0.8.8",
+    "esmodules": [
+        "sample.js"
+    ],
+    "compatibleCoreVersion": "0.8.8",
+    "url": "https://github.com/hitcherland/foundryvtt-dev-template",
+    "manifest": "https://raw.githubusercontent.com/hitcherland/foundryvtt-dev-template/release/module.json",
+    "readme": "https://raw.githubusercontent.com/hitcherland/foundryvtt-dev-template/release/README.md",
+    "download": "https://github.com/hitcherland/foundryvtt-dev-template/archive/refs/tags/0.0.1.zip"
+}
