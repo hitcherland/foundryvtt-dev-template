@@ -9,6 +9,7 @@ if(repo !== undefined && branch !== undefined) {
     const options = {
         branch: branch,
         repo: repository,
+        tag: config.version,
     }
     
     ghpages.publish('dist', options)
