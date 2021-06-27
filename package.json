@@ -1,0 +1,29 @@
+{
+  "name": "foundryvtt-dev-template",
+  "version": "0.0.1",
+  "description": "Base Template for FoundryVTT Development",
+  "main": "src/index.js",
+  "scripts": {
+    "symlink": "node symlink",
+    "build": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "watch": "webpack serve --hot"
+  },
+  "keywords": [
+    "foundryvtt"
+  ],
+  "author": "hitcherland",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "gh-pages": "^3.2.3",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-import-glob-loader": "^1.6.3"
+  }
+}
