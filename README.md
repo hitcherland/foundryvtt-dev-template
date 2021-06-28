@@ -1,1 +1,0 @@
-This is an example package to show how to use foundryvtt-dev-template
