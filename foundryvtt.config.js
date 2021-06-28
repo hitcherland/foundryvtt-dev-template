@@ -1,7 +1,7 @@
 module.exports = {
     type: 'module', // or 'system',
     name: 'sample',
-    version: '0.01',
+    version: '0.0.1',
     author: 'hitcherland',
     title: 'A Sample Module',
     description: 'This is a sample module to show off foundryvtt-dev-template',
